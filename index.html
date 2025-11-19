@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Audio Visualizer</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header>
+        <h1>Audio Visualizer</h1>
+      </header>
+
+      <div class="controls">
+        <input id="file" type="file" accept="audio/*" />
+        <button id="playPause" disabled>Play</button>
+        <div class="info" id="info">No file loaded</div>
+      </div>
+
+      <div id="dropZone" class="drop-zone">
+        <canvas id="freqCanvas"></canvas>
+        <canvas id="waveCanvas"></canvas>
+      </div>
+    </div>
+
+    <script src="visualizer.js"></script>
+  </body>
+</html>

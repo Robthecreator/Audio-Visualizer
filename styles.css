@@ -1,0 +1,73 @@
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; height: 100%; }
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #071022;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.app { 
+    width: 90%; 
+    max-width: 900px; 
+}
+
+header h1 { 
+    margin: 0 0 6px 0; 
+    font-size: 18px; 
+}
+
+.controls { 
+    margin: 10px 0; 
+    display: flex; 
+    gap: 8px; 
+    align-items: center; 
+}
+
+button { 
+    padding: 8px 10px; 
+    border-radius: 6px; 
+    border: none; 
+    background: #6a5cff; 
+    color: #fff; 
+    cursor: pointer; 
+}
+
+button:disabled { 
+    opacity: 0.5; 
+    cursor: not-allowed; 
+}
+
+.info { 
+    color: #aac; 
+    font-size: 13px; 
+}
+
+.drop-zone { 
+    border: 2px dashed #204; 
+    border-radius: 8px; 
+    min-height: 300px; 
+    position: relative; 
+    background: #0b1230; 
+    overflow: hidden; 
+}
+
+canvas { 
+    position: absolute; 
+    left: 0; 
+    top: 0; 
+    width: 100%; 
+    height: 100%; 
+    display: block; 
+}
+
+.drop-zone.dragover { 
+    outline: 2px dashed #5b3cff; 
+}
+
+@media (max-width: 600px) {
+  .drop-zone { min-height: 200px; }
+}
